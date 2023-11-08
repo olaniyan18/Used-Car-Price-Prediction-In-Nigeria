@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price In Nigeria</title>
+</head>
+<body>
+    <form action="/car_price" method="post">
+        <div style="width: 50%; height: 50%; position: relative;text-align: center;">
+            <img style="width: 1330px; height: 630px; left: 0px; top: 0px; position: absolute; filter:brightness(30%)" src="/static/car2.jpg" />
+            
+            <!-- brand -->
+            <div style="width: 79.76px; height: 20.43px; left: 236.62px; top: 79px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Brand</div>
+            <!-- <div style="width: 433px; height: 31.50px; left: 50px; top: 110px; position: absolute; background: #D9D9D9"></div> -->
+            <select id="brand-dropdown" name="brand" style="width: 250px; height: 40.50px; left: 150px; top: 110px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size:20px; font-family:Inter">
+                <option value="0" name = 'Acura'>Acura</option>
+                <option value="1" name = 'Alphina'>Alphina</option>
+                <option value="2" name = 'Audi'>Audi</option>
+                <option value="3" name = 'Bentley'>Bentley</option>
+                <option value="4" name = 'BMW'>BMW</option>
+                <option value="5" name = 'Chevrolet'>Chevrolet</option>
+                <option value="6" name = 'Daf'>DAF</option>
+                <option value="7" name = 'Dodge'>Dodge</option>
+                <option value="8" name = 'Fiat'>Fiat</option>
+                <option value="9" name = 'Ford'>Ford</option>
+                <option value="10" name = 'Gac'>Gac</option>
+                <option value="11" name = 'Gmc'>Gmc</option>
+                <option value="12" name = 'Honda'>Honda</option>
+                <option value="13" name = 'Hyundai'>Hyundai</option>
+                <option value="14" name = 'Infiniti'>Infiniti</option>
+                <option value="15" name = 'Isuzu'>Isuzu</option>
+                <option value="16" name = 'Iveco'>Iveco</option>
+                <option value="17" name = 'Jaguar'>Jaguar</option>
+                <option value="18" name = 'Jeep'>Jeep</option>
+                <option value="19" name = 'Jmc'>Jmc</option>
+                <option value="20" name = 'Kia'>Kia</option>
+                <option value="21" name = 'Land Rover'>Land Rover</option>
+                <option value="22" name = 'Lexus'>Lexus</option>
+                <option value="23" name = 'Lincoln'>Lincoln</option>
+                <option value="24" name = 'Mack'>Mack</option>
+                <option value="25" name = 'Man'>Man</option>
+                <option value="26" name = 'Mazda'>Mazda</option>
+                <option value="27" name = 'Mercedes'>Mercedes</option>
+                <option value="28" name = 'Mini'>Mini</option>
+                <option value="29" name = 'Mitsubishi'>Mitsubishi</option>
+                <option value="30" name = 'Nissan'>Nissan</option>
+                <option value="31" name = 'Peugeot'>Peugeot</option>
+                <option value="32" name = 'Pontiac'>Pontiac</option>
+                <option value="33" name = 'Porsche'>Porsche</option>
+                <option value="34" name = 'Rolls-royce'>Rolls-royce</option>
+                <option value="35" name = 'Toyota'>Toyota</option>
+                <option value="36" name = 'Volkswagen'>Volkswagen</option>
+                <option value="37" name = 'Volvo'>Volvo</option>
 
+            </select>
+
+
+            <!-- Car Type -->
+            <div style="width: 122.49px; height: 20.43px; left: 205.25px; top: 163px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Car Type</div>
+            <!-- <div style="width: 250px; height: 40.50px; left: 150px; top: 194px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size:20px; font-family:Inter"></div> -->
+
+            <select id="car-dropdown" name = 'car' style="width: 250px; height: 40.50px; left: 150px; top: 194px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size:20px; font-family:Inter">
+                <option value=" ">Car Type</option>
+            </select>
+            <script src="/static/car.js"></script>
+            
+            <!-- Odometer -->
+            <div style="width: 135.31px; height: 20.43px; left: 199.55px; top: 247px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Odometer</div>
+            <!-- <div style="width: 433px; height: 31.50px; left: 50px; top: 278px; position: absolute; background: #D9D9D9"></div> -->
+
+            <input style="width: 250px; height: 40.50px; left: 150px; top: 278px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size:20px; font-family:Inter;border: 0" type="text" name="a" placeholder="e.g 1000" required>
+
+
+
+
+            <!-- Location -->
+            <div style="width: 116.80px; height: 20.43px; left: 218.10px; top: 331px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Location</div>
+            <!-- <div style="width: 433px; height: 31.50px; left: 50px; top: 362px; position: absolute; background: #D9D9D9"></div> -->
+            <select id="location-dropdown" name="location" style="width: 250px; height: 40.50px; left: 150px; top: 362px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size: 20px; font-family:Inter">
+
+                <option value="1" name = 'Lagos'>Lagos</option>
+                <option value="0" name = 'Abuja'>Abuja</option>
+                <option value="2" name = 'Ogun'>Ogun</option>
+                <option value="3" name = 'Others'>Others</option>
+
+            </select>
+
+
+
+
+            <!-- Imported -->
+            <div style="width: 123.92px; height: 20.43px; left: 215.25px; top: 415px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Imported</div>
+            <!-- <div style="width: 433px; height: 31.50px; left: 50px; top: 446px; position: absolute; background: #D9D9D9"></div> -->
+            <select id="import-dropdown" name="import" style="width: 250px; height: 40.50px; left: 150px; top: 446px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size: 20px; font-family:Inter">
+                <option value="1" name = 'locally-used'>Locally Used</option>
+                <option value="0" name = 'foreign-used'>Foreign Used</option>
+                <option value="2" name = 'new'>New</option>
+
+
+            </select>
+
+
+
+            <!-- Engine -->
+            <div style="width: 91.16px; height: 20.43px; left: 920.92px; top: 79px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Engine</div>
+            <!-- <div style="width: 433px; height: 31.50px; left: 750px; top: 110px; position: absolute; background: #D9D9D9"></div> -->
+            <select id="engine_dropdown" name="engine" style="width: 250px; height: 40.50px; left: 850px; top: 110px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size:20px; font-family:Inter">
+
+                <option value="0" name = '4-cylinder(I4)'>4-cylinder(I4)</option>
+                <option value="1" name = '6-cylinder(I6)'>6-cylinder(I6)</option>
+                <option value="2" name = '6-cylinder(V6)'>6-cylinder(V6)</option>
+                <option value="3" name = '8-cylinder(V8)'>8-cylinder(V8)</option>
+                <option value="4" name = 'others'>Others</option>
+
+
+            </select>
+            
+            
+            <!-- Transmission -->
+            <div style="width: 176.62px; height: 20.43px; left: 890.19px; top: 163px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Transmission</div>
+            <!-- <div style="width: 433px; height: 31.50px; left: 750px; top: 194px; position: absolute; background: #D9D9D9"></div> -->
+            <select id="transmission_dropdown" name="transmission" style="width: 250px; height: 40.50px; left: 850px; top: 194px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size: 20px; font-family:Inter">
+
+                <option value="0" name = 'auto'>Automatic</option>
+                <option value="1" name = 'manual'>Manual</option>
+
+            </select>
+
+
+
+
+            <!--Fuel Type  -->
+            <div style="width: 131.04px; height: 20.43px; left: 910.98px; top: 247px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Fuel Type</div>
+            <!-- <div style="width: 433px; height: 31.50px; left: 750px; top: 278px; position: absolute; background: #D9D9D9"></div> -->
+            <select id="fuel_dropdown" name="fuel_type" style="width: 250px; height: 40.50px; left: 850px; top: 278px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size: 20px; font-family:Inter">
+
+                <option value="1" name = 'fuel'>Fuel</option>
+                <option value="0" name = 'diesel'>Diesel</option>
+
+            </select>
+
+
+            <!-- Color -->
+            <div style="width: 72.64px; height: 20.43px; left: 935.89px; top: 331px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Color</div>
+            <!-- <div style="width: 433px; height: 31.50px; left: 750px; top: 362px; position: absolute; background: #D9D9D9"></div> -->
+            <select id="color_dropdown" name="color" style="width: 250px; height: 40.50px; left: 850px; top: 362px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size: 20px; font-family:Inter">
+
+                <option value="0" name = 'Black'>Black</option>
+                <option value="1" name = 'Blue'>Blue</option>
+                <option value="2" name = 'Brown'>Brown</option>
+                <option value="3" name = 'Cream'>Cream</option>
+                <option value="4" name = 'Dark Blue'>Dark Blue</option>
+                <option value="5" name = 'Dark Grey'>Dark Grey</option>
+                <option value="6" name = 'Gold'>Gold</option>
+                <option value="7" name = 'Green'>Green</option>
+                <option value="8" name = 'Grey'>Grey</option>
+                <option value="10" name = 'Red'>Red</option>
+                <option value="11" name = 'Silver'>Silver</option>
+                <option value="12" name = 'White'>White</option>
+                <option value="13" name = 'Wine'>Wine</option>
+                <option value="14" name = 'Yellow'>Yellow</option>
+                <option value="9" name = 'Others'>Others</option>
+                
+
+            </select>
+            
+            
+            
+            
+            <!-- Year -->
+            <div style="width: 61.25px; height: 20.43px; left: 945px; top: 419px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Year</div>
+            <!-- <div style="width: 433px; height: 31.50px; left: 750px; top: 446px; position: absolute; background: #D9D9D9"></div> -->
+            <select id="year_dropdown" name="year" style="width: 250px; height: 40.50px; left: 850px; top: 446px; position: absolute; background: #363636; text-align:center; color:white; font-weight:400; font-size: 20px; font-family:Inter">
+
+                <option value="1980" >1980</option>
+                <option value="1982" >1982</option>
+                <option value="1985" >1985</option>
+                <option value="1987" >1987</option>
+                <option value="1991" >1991</option>
+                <option value="1992" >1992</option>
+                <option value="1993" >1993</option>
+                <option value="1994" >1994</option>
+                <option value="1995" >1995</option>
+                <option value="1996" >1996</option>
+                <option value="1997" >1997</option>
+                <option value="1998" >1998</option>
+                <option value="1999" >1999</option>
+                <option value="2000" >2000</option>
+                <option value="2001" >2001</option>
+                <option value="2002" >2002</option>
+                <option value="2003" >2003</option>
+                <option value="2004" >2004</option>
+                <option value="2005" >2005</option>
+                <option value="2006" >2006</option>
+                <option value="2007" >2007</option>
+                <option value="2008" >2008</option>
+                <option value="2009" >2009</option>
+                <option value="2010" >2010</option>
+                <option value="2011" >2011</option>
+                <option value="2012" >2012</option>
+                <option value="2013" >2013</option>
+                <option value="2014" >2014</option>
+                <option value="2015" >2015</option>
+                <option value="2016" >2016</option>
+                <option value="2017" >2017</option>
+                <option value="2018" >2018</option>
+                <option value="2019" >2019</option>
+                <option value="2020" >2020</option>
+
+            </select>
+            
+            
+            
+            
+            
+            <!-- Price -->
+            <input style="width: 150px; height: 41px; left: 550px; top: 480px;position: absolute; background: #363636; border-radius: 10px; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word; color: white; border: 0" type="submit" value="Price" id="submit">
+            
+            <div style="width: 440px; height: 38.95px; left: 500px; top: 15px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">CAR  PRICE IN NIGERIA</div>
+        
+
+
+            <div style="width: 150px; height: 41px; left: 550px; top: 550px;position: absolute;  border-radius: 10px; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word; color: white; border: 0">
+                {% if data %}
+                    {{data}} Naira
+                {% endif %}
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
